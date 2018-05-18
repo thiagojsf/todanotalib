@@ -1,0 +1,17 @@
+<div [ngClass]="{ 'input-field' : type != 'checkbox' }" class="col s12">
+  <i *ngIf="icon != undefined" class="material-icons prefix">{{icon}}</i>
+  <input [placeholder]="placeholder" 
+  [ngClass]="{ 'active' : type == 'date' || (model != null && model.length > 0), 'uppercase' : uppercase, 'big-field' : bigField }"
+  [id]="guid" 
+  name="{{ guid }}" 
+  type="{{ type }}" 
+  [disabled]="disabled"
+  class="validate" 
+  step="0.01"
+  [maxlength]="maxLength"
+  [(ngModel)]="model"
+  (keyup)="changeValue()"
+  (blur)="localBlur()"
+  (keyup)="autoComplete()" />
+  <label [ngClass]="{ 'active' : type == 'date' || type == 'datetime-local' || (model != null && model.length > 0) }" for="{{ guid }}">{{ label }}</label>
+</div>
