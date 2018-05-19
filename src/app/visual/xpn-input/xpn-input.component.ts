@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { TodanotaSettings } from '../../todanota-settings';
+//import { TodanotaSettings } from '../../todanota-settings';
 
 declare var $: any;
 
@@ -29,7 +29,7 @@ export class XpnInputComponent implements OnInit {
 
   constructor() { 
     if (this.guid == undefined)
-      this.guid = TodanotaSettings.generateUUID();
+      this.guid = '';// TodanotaSettings.generateUUID();
   }
 
   ngOnInit() {

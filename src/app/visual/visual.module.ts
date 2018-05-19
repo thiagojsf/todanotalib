@@ -6,6 +6,7 @@ import { XpnInputComponent } from './xpn-input/xpn-input.component';
   imports: [
     CommonModule
   ],
-  declarations: [XpnInputComponent]
+  declarations: [XpnInputComponent],
+  exports: [XpnInputComponent]
 })
 export class VisualModule { }

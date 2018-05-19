@@ -33,6 +33,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+/.ng_pkg_build
 
 # System Files
 .DS_Store

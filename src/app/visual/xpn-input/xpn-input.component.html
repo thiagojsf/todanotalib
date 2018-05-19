@@ -8,7 +8,7 @@
   [disabled]="disabled"
   class="validate" 
   step="0.01"
-  [maxlength]="maxLength"
+  [attr.maxlength]="maxLength == null ? null : maxLength"
   [(ngModel)]="model"
   (keyup)="changeValue()"
   (blur)="localBlur()"
