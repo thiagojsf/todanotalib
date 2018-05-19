@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { VisualModule } from './visual/visual.module';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { VisualModule } from './visual/visual.module';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     VisualModule
   ],
   providers: [],
