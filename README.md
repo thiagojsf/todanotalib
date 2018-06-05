@@ -39,3 +39,8 @@ Is a html input already with the divs to show the placeholders. The component pr
 @Output() modelChange = new EventEmitter<any>();
 
 
+## StorageMoule
+
+getObjectFromLocalStorage(key: string, protoType: any): any //Receive a key from local storage, get it and convert to an object. To set the type of the object you should use a prototype from a class like: MyClass.prototype
+
+
